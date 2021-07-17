@@ -203,6 +203,14 @@ footer .section_BCL ul{
     top:-50%;
     width: 1.6rem;
 }
+.emblem_BCL{
+    top:6px;
+    width:1rem;
+}
+.emblem_BCL img{
+    top:-4px;
+    /* width: 0.4rem; */
+}
 
 }
 
@@ -227,7 +235,7 @@ footer .section_BCL ul{
 }
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-width:780px){
     :root{
         font-size: 80px;
     }
@@ -237,9 +245,17 @@ footer .section_BCL ul{
     .how-to-vaccine_BCL .how-to-cards .card_BCL{
         margin: auto;
         margin-top: 1.5rem;
+        width:80%;
+
+    }
+    .display_BCL{
+        width: 90%;
+        justify-content: center;
+        flex-direction: column;
     }
     .how-to-vaccine_BCL .how-to-cards .card_BCL img{
-        left:15%;
+        left:30%;
+        top:-70%;
     }
     footer{
         gap:0.3rem;
@@ -248,16 +264,24 @@ footer .section_BCL ul{
         flex-direction: column;
         gap:0.2rem;
     }
+    .display_BCL .content_BCL{
+        width: 80%;
+        margin:auto;
+    }
     .display_BCL img{
-        display: none;
+        /* display: none; */
+        width: 80%;
+        margin:auto;
     }
     .content_BCL p{
         font-size: 0.25rem;
         line-height: 30px;
+        width: 80%;
     }
     .content_btn_BCL {
         position: relative;
-        width: 80vh;
+        flex-direction: column;
+        justify-content: flex-end;
     }
     .content_btn_BCL p{
         line-height: normal;
@@ -269,23 +293,66 @@ footer .section_BCL ul{
         font-size: 0.2rem;
     }
     .emblem_BCL{
-        display: none;
+        /* display: none; */
+        left:0px;
+        top:5px;
+        position: relative;
     }
     nav{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr ;
     }
     nav img{
-        display: none;
+        /* display: none; */
+        position: relative;
+        width: 1.5rem;
+        top:0px;
+        left: 0px;
     }
 
 }
-@media screen and (max-width:400px){
+@media screen and (max-width:450px){
     :root{
         font-size: 50px;
     }
     .content_btn_BCL {
         position: relative;
-        width: 50vh;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 100%;
     }
+    .display_BCL{
+        width: 90%;
+        justify-content: center;
+    }
+    .how-to-vaccine_BCL{
+        padding: 5px;
+    }
+    footer{
+        flex-direction: column;
+    }
+    footer .section_BCL p{
+        font-size: 0.3rem;
+        
+    }
+    footer .section_BCL ul{
+        line-height: 15px;
+        font-size: 0.2rem;
+
+    }
+    .copyright_BCL{
+        font-size: 0.2rem;
+    }
+    .how-to-vaccine_BCL .how-to-cards .card_BCL{
+        font-size: 0.22rem;
+        width:70%;
+    }
+    .how-to-vaccine_BCL .how-to-cards .card_BCL img{
+        left:35%;
+    }
+    .how-to-vaccine_BCL .how-to-cards{
+        margin-bottom: 0.5rem;
+    }
+
+
 }
